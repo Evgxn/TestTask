@@ -73,13 +73,7 @@ namespace TestTask
 
                 openFileDialog.ShowDialog();
 
-                var fileNamePath = openFileDialog.FileName;
-
-                var fileName = Guid.NewGuid();
-
-                File.Copy(fileNamePath, "..\\..\\..\\Images\\" + fileName + ".png", true);
-
-                _copyImgName = "D:\\proj\\TestTask\\TestTask\\Images\\" + fileName + ".png";
+                _copyImgName = openFileDialog.FileName;
             }
             catch (Exception exception)
             {

@@ -7,6 +7,7 @@ namespace TestTaskWebApi.Data
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
+            Database.EnsureCreated();
         }
 
         public DbSet<Card> Cards { get; set; }
