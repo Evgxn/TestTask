@@ -16,7 +16,7 @@
                 <Label FontSize="16" Width="244" Height="29" Name="labelId">Номер</Label>
             </DockPanel>
             <DockPanel  Width="244" Height="28">
-                <Label FontSize="16" Width="242" Height="28">Название</Label>
+                <Label FontSize="16" Width="242" Height="28">Название:</Label>
             </DockPanel>
             <DockPanel Height="32" Width="244">
                 <TextBox Width="225" Height="23" Margin="4 0 10 0" x:Name="TextBoxName"/>

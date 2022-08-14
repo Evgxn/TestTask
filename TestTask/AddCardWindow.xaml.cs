@@ -28,6 +28,8 @@ namespace TestTask
                 openFileDialog.ShowDialog();
 
                 _copyImgName = openFileDialog.FileName;
+
+                MessageBox.Show("Картинка добавлена успешно");
             }
             catch (Exception exception)
             {

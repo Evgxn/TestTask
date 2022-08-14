@@ -74,6 +74,8 @@ namespace TestTask
                 openFileDialog.ShowDialog();
 
                 _copyImgName = openFileDialog.FileName;
+
+                MessageBox.Show("Картинка изменена успешно");
             }
             catch (Exception exception)
             {
