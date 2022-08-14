@@ -1,0 +1,35 @@
+﻿<Window x:Class="TestTask.EditCardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestTask"
+        mc:Ignorable="d"
+        Title="Окно изменения карточки" Height="225" Width="276" MinHeight="225" MinWidth="276" MaxHeight="225" MaxWidth="276">
+    <Grid Margin="0,0,0,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Margin="0,10,10,0" Grid.ColumnSpan="2" >
+            <DockPanel Width="244">
+                <Label FontSize="16" Width="244" Height="29" Name="labelId">Номер</Label>
+            </DockPanel>
+            <DockPanel  Width="244" Height="28">
+                <Label FontSize="16" Width="242" Height="28">Название</Label>
+            </DockPanel>
+            <DockPanel Height="32" Width="244">
+                <TextBox Width="225" Height="23" Margin="4 0 10 0" x:Name="TextBoxName"/>
+            </DockPanel>
+            <DockPanel  Height="46" Width="auto">
+                <Button x:Name="btnOpenFile" Click="BtnOpenFile_OnClick" Height="38" Margin="10 0 10 0" Width="auto" Content="Выбрать картинку" HorizontalAlignment="Left"/>
+            </DockPanel>
+            <DockPanel Width="auto" Height="auto">
+                <Button Click="Edit_OnClick" Height="35" Width="auto" HorizontalAlignment="Left" Margin="10 0 10 0">Подтвердить</Button>
+            </DockPanel>
+            <DockPanel>
+                <Label Visibility="Hidden" Name="lableImg"></Label>
+            </DockPanel>
+        </StackPanel>
+    </Grid>
+</Window>
